@@ -20,11 +20,10 @@ public class Application {
         return args -> {
             Stream.of("Hyundai", "Bugati","Porsche", "Lamborghini", "Bentley").forEach(company -> {
                 Car car = new Car();
-                car.setName(company);
-                carRepository.save(car);
+                
             
             });
-            carRepository.findAll().forEach(System.out::println);
+      
         };
     }
 }
