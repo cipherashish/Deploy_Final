@@ -20,7 +20,7 @@ public class CarController {
 	        this.CarRepository = carRepository;
 	    }
 
-	    @GetMapping("/car")
+	    @GetMapping("/test")
 	    public List<Car> getcars() {
 	    	  return (List<Car>) CarRepository.findAll();
 	    }
